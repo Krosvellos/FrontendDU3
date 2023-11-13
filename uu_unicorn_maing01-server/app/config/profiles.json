@@ -1,0 +1,99 @@
+{
+  "{asid}": {
+    "profileList": ["AsidAuthorities","Owner","Member", "AsidExecutives", "AsidLicenseOwner", "Public"],
+    "useCaseMap": {
+    }
+  },
+  "*": {
+    "profileList": ["Authorities", "Executives","Owner","Member", "AwidLicenseOwner", "Public", "Authenticated", "AwidInitiator"],
+    "useCaseMap": {
+      "sys/uuAppWorkspace/init": {
+        "sysStateList": ["created", "assigned"],
+        "profileList": ["AwidLicenseOwner", "AwidInitiator"]
+      },
+      "sys/uuAppWorkspace/load": {
+        "sysStateList": ["active"],
+        "profileList": ["Authenticated"]
+      },
+      "sys/uuAppWorkspace/loadBasicData": {
+        "sysStateList": ["active"],
+        "profileList": ["Public"]
+      },
+      "defaultUve": {
+        "profileList": ["Public"]
+      },
+      "sys/uuAppWorkspace/initUve": {
+        "sysStateList": ["created"],
+        "profileList": ["Public", "AwidLicenseOwner"]
+      },
+      "helloWorld": {
+        "sysStateList": ["active"],
+        "profileList": ["Public"]
+      },
+      "joke/create": {
+        "sysStateList": ["active"],
+        "profileList": ["Public"]
+      },
+      "shoppinglistList/list": {
+        "sysStateList": ["active"],
+        "profileList": ["Owner", "Member"]
+      },
+      "shoppinglistList/shoppingList/create": {
+        "sysStateList": ["active"],
+        "profileList": ["Owner"]
+      },
+      "shoppinglistList/shoppingList/:id/delete": {
+        "sysStateList": ["active"],
+        "profileList": ["Owner"]
+      },
+      "shoppinglistList/shoppingList/:id/item/list": {
+        "sysStateList": ["active"],
+        "profileList": ["Owner", "Member"]
+      },
+      "shoppinglistList/shoppingList/:id/name/update": {
+        "sysStateList": ["active"],
+        "profileList": ["Owner","Member"]
+      },
+      "shoppinglistList/shoppingList/:id/archived/update": {
+        "sysStateList": ["active"],
+        "profileList": ["Owner"]
+      },
+      "shoppinglistList/shoppingList/archived/list": {
+        "sysStateList": ["active"],
+        "profileList": ["Owner", "Member"]
+      },
+      "shoppinglistList/shoppingList/:id/authorizedusers/list": {
+        "sysStateList": ["active"],
+        "profileList": ["Owner", "Member"]
+      },
+      "shoppinglistList/shoppingList/:id/authorizedusers/create": {
+        "sysStateList": ["active"],
+        "profileList": ["Owner"]
+      },
+      "shoppinglistList/shoppingList/:id/authorizedusers/:id/delete": {
+        "sysStateList": ["active"],
+        "profileList": ["Owner"]
+      },
+      "shoppinglistList/shoppingList/:id/authorizedusers/:myid/delete": {
+        "sysStateList": ["active"],
+        "profileList": ["Member"]
+      },
+      "shoppinglistList/shoppingList/:id/item/create": {
+        "sysStateList": ["active"],
+        "profileList": ["Owner","Member"]
+      },
+      "shoppinglistList/shoppingList/:id/item/:id/delete": {
+        "sysStateList": ["active"],
+        "profileList": ["Owner","Member"]
+      },
+      "shoppinglistList/shoppingList/:id/item/:id/resolved/update": {
+        "sysStateList": ["active"],
+        "profileList": ["Owner","Member"]
+      },
+      "shoppinglistList/shoppingList/:id/item/resolved/list": {
+        "sysStateList": ["active"],
+        "profileList": ["Owner", "Member"]
+      }
+    }
+  }
+}
