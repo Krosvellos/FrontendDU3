@@ -1,0 +1,70 @@
+{
+    "itemList": [
+      {
+        "id": "tygr01",
+        "speciesName": "Bengal tiger",
+        "speciesTaxonomyName": "Panthera tigris",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Felidae",
+        "location": "Asia",
+        "description": "",
+        "img": "tygr_01"
+      },
+      {
+        "id": "pavian01",
+        "speciesName": "Hamadryas baboon",
+        "speciesTaxonomyName": "Papio hamadryas",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cercopithecidae",
+        "location": "Africa",
+        "description": "",
+        "img": "pavian_01"
+      },
+      {
+        "id": "malpa01",
+        "speciesName": "Golden-bellied capuchin",
+        "speciesTaxonomyName": "Sapajus xanthostemos",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cebidae",
+        "location": "America",
+        "description": "",
+        "img": "malpa_01"
+      },
+      {
+        "id": "langur01",
+        "speciesName": "Red-shanked douc",
+        "speciesTaxonomyName": "Pygathrix nemaeus",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cercopithecidae",
+        "location": "Asia",
+        "description": "",
+        "img": "langur_01"
+      },
+      {
+        "id": "orangutan01",
+        "speciesName": "Sumatran orangutan",
+        "speciesTaxonomyName": "Pongo abelii",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Hominidae",
+        "location": "Asia",
+        "description": "",
+        "img": "orangutan_01"
+      },
+      {
+        "id": "varan02",
+        "speciesName": "Komodo dragon",
+        "speciesTaxonomyName": "Varanus komodoensis",
+        "class": "Reptilia",
+        "order": "Squamata",
+        "family": "Varanidae",
+        "location": "Asia",
+        "description": "",
+        "img": "varan_02"
+      }
+    ]
+  }

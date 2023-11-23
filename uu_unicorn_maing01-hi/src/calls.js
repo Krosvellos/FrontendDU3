@@ -18,6 +18,12 @@ const Calls = {
   //   const commandUri = Calls.getCommandUri("loadDemoContent");
   //   return Calls.call("get", commandUri, dtoIn);
   // },
+  
+
+  getShoppingList() {
+    const commandUri = Calls.getCommandUri("getShoppingList");
+    return Calls.call("get", commandUri);
+  },
 
   loadIdentityProfiles() {
     const commandUri = Calls.getCommandUri("sys/uuAppWorkspace/initUve");

@@ -5,7 +5,7 @@ import Plus4U5App, { withRoute } from "uu_plus4u5g02-app";
 import Calls from "calls";
 
 import Config from "./config/config.js";
-import RouteBar from "../core/route-bar.js";
+import PositionBar from "../core/position-bar.js";
 import importLsi from "../lsi/import-lsi.js";
 //@@viewOff:imports
 
@@ -76,7 +76,7 @@ let ControlPanel = createVisualComponent({
     }
     return (
       <>
-        <RouteBar />
+        <PositionBar />
         {child}
       </>
     );

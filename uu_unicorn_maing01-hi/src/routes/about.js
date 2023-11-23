@@ -14,7 +14,7 @@ import Plus4U5App, { withRoute } from "uu_plus4u5g02-app";
 
 import Config from "./config/config.js";
 import AboutCfg from "../config/about.js";
-import RouteBar from "../core/route-bar.js";
+import PositionBar from "../core/position-bar.js";
 import importLsi from "../lsi/import-lsi.js";
 //@@viewOff:imports
 
@@ -127,7 +127,7 @@ let About = createVisualComponent({
     const attrs = Utils.VisualComponent.getAttrs(props);
     return legacyComponentsReady ? (
       <div {...attrs}>
-        <RouteBar />
+        <PositionBar />
         <div className={Css.content()}>
           <DynamicLibraryComponent
             uu5Tag="Plus4U5.App.About"
@@ -139,7 +139,7 @@ let About = createVisualComponent({
               uu5Tag="Plus4U5.App.Support"
               uuFlsUri={uuAppUuFlsBaseUri}
               uuSlsUri={uuAppUuSlsBaseUri}
-              productCode="support/uuUnicorn"
+              productCode="support/uunBsfy"
               productPortalUri={uuAppProductPortalUri}
             />
           ) : null}
@@ -147,7 +147,7 @@ let About = createVisualComponent({
             <DynamicLibraryComponent uu5Tag="UuProductCatalogue.Bricks.ProductList" type="16x9" products={products} />
           ) : null}
           <div className={Css.common()}>
-            <div>{`uuUnicorn ${Environment.appVersion}`}</div>
+            <div>{`uunBsfy ${Environment.appVersion}`}</div>
             {license.termsOfUse && (
               <div>
                 <Uu5Elements.Link href={license.termsOfUse} target="_blank">

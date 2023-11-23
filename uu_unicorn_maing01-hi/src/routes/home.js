@@ -6,7 +6,7 @@ import { withRoute } from "uu_plus4u5g02-app";
 
 import Config from "./config/config.js";
 import WelcomeRow from "../bricks/welcome-row.js";
-import RouteBar from "../core/route-bar.js";
+import PositionBar from "../core/position-bar.js";
 import importLsi from "../lsi/import-lsi.js";
 //@@viewOff:imports
 
@@ -57,12 +57,12 @@ let Home = createVisualComponent({
     const attrs = Utils.VisualComponent.getAttrs(props);
     return (
       <div {...attrs}>
-        <RouteBar />
+        <PositionBar />
         
         <div style={containerStyles}>
-      <h1>Frontend - Domácí Úkol 3</h1>
+      <h1>Frontend - Domácí Úkol 4</h1>
       <div>
-        <b>Přeji krásný den! Domácí úkol naleznete v "Seznamy".</b>
+        <b>Přeji krásný den! Snad budou mockup data fungovat!</b>
         
       </div>
     </div>

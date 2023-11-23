@@ -2,12 +2,12 @@ function insert(styleEl) {
   var insertionEl = document.head || document.body;
 
   styleEl.setAttribute("data-owner", "uu_unicorn_maing01-hi/uu_unicorn_maing01-hi@0.1.0");
-  styleEl.setAttribute("data-emotion", "uuunicorn");
+  styleEl.setAttribute("data-emotion", "uunbsfywinterg");
   styleEl.setAttribute("data-tech", "less");
 
   // insert the style element
   // 1. after last matching data-emotion using technology "less"
-  var els = insertionEl.querySelectorAll(`style[data-emotion="uuunicorn"]`);
+  var els = insertionEl.querySelectorAll(`style[data-emotion="uunbsfywinterg"]`);
   for (var i = els.length - 1; i >= 0; i--) {
     var el = els[i];
     if (el.getAttribute("data-tech") === "less") {

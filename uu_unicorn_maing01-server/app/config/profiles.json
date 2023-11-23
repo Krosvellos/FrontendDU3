@@ -1,11 +1,11 @@
 {
   "{asid}": {
-    "profileList": ["AsidAuthorities","Owner","Member", "AsidExecutives", "AsidLicenseOwner", "Public"],
+    "profileList": ["AsidAuthorities", "AsidExecutives", "AsidLicenseOwner", "Public"],
     "useCaseMap": {
     }
   },
   "*": {
-    "profileList": ["Authorities", "Executives","Owner","Member", "AwidLicenseOwner", "Public", "Authenticated", "AwidInitiator"],
+    "profileList": ["Authorities", "Executives", "AwidLicenseOwner", "Public", "Authenticated", "AwidInitiator"],
     "useCaseMap": {
       "sys/uuAppWorkspace/init": {
         "sysStateList": ["created", "assigned"],
@@ -36,63 +36,63 @@
       },
       "shoppinglistList/list": {
         "sysStateList": ["active"],
-        "profileList": ["Owner", "Member"]
+        "profileList": ["Executives"]
       },
       "shoppinglistList/shoppingList/create": {
         "sysStateList": ["active"],
-        "profileList": ["Owner"]
+        "profileList": ["Executives"]
       },
       "shoppinglistList/shoppingList/:id/delete": {
         "sysStateList": ["active"],
-        "profileList": ["Owner"]
+        "profileList": ["Executives"]
       },
       "shoppinglistList/shoppingList/:id/item/list": {
         "sysStateList": ["active"],
-        "profileList": ["Owner", "Member"]
+        "profileList": ["Executives"]
       },
       "shoppinglistList/shoppingList/:id/name/update": {
         "sysStateList": ["active"],
-        "profileList": ["Owner","Member"]
+        "profileList": ["Executives"]
       },
       "shoppinglistList/shoppingList/:id/archived/update": {
         "sysStateList": ["active"],
-        "profileList": ["Owner"]
+        "profileList": ["Executives"]
       },
       "shoppinglistList/shoppingList/archived/list": {
         "sysStateList": ["active"],
-        "profileList": ["Owner", "Member"]
+        "profileList": ["Executives"]
       },
       "shoppinglistList/shoppingList/:id/authorizedusers/list": {
         "sysStateList": ["active"],
-        "profileList": ["Owner", "Member"]
+        "profileList": ["Executives"]
       },
       "shoppinglistList/shoppingList/:id/authorizedusers/create": {
         "sysStateList": ["active"],
-        "profileList": ["Owner"]
+        "profileList": ["Executives"]
       },
       "shoppinglistList/shoppingList/:id/authorizedusers/:id/delete": {
         "sysStateList": ["active"],
-        "profileList": ["Owner"]
+        "profileList": ["Executives"]
       },
       "shoppinglistList/shoppingList/:id/authorizedusers/:myid/delete": {
         "sysStateList": ["active"],
-        "profileList": ["Member"]
+        "profileList": ["Executives"]
       },
       "shoppinglistList/shoppingList/:id/item/create": {
         "sysStateList": ["active"],
-        "profileList": ["Owner","Member"]
+        "profileList": ["Executives"]
       },
       "shoppinglistList/shoppingList/:id/item/:id/delete": {
         "sysStateList": ["active"],
-        "profileList": ["Owner","Member"]
+        "profileList": ["Executives"]
       },
       "shoppinglistList/shoppingList/:id/item/:id/resolved/update": {
         "sysStateList": ["active"],
-        "profileList": ["Owner","Member"]
+        "profileList": ["Executives"]
       },
       "shoppinglistList/shoppingList/:id/item/resolved/list": {
         "sysStateList": ["active"],
-        "profileList": ["Owner", "Member"]
+        "profileList": ["Executives"]
       }
     }
   }
