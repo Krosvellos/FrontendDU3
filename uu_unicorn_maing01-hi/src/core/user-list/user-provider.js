@@ -2,6 +2,7 @@
 import { createComponent, useState, Utils, useDataList } from "uu5g05";
 import UserContext from "./user-context";
 import Config from "./config/config";
+import Calls from "calls";
 
 //@@viewOff:imports
 
@@ -53,7 +54,7 @@ const userList = [
   },
 ];
 
-export const UserProvider = createComponent({
+const UserProvider = createComponent({
   //@@viewOn:statics
   uu5Tag: Config.TAG + "UserProvider",
   //@@viewOff:statics

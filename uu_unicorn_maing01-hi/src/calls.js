@@ -19,12 +19,6 @@ const Calls = {
   //   return Calls.call("get", commandUri, dtoIn);
   // },
   
-
-  getShoppingList() {
-    const commandUri = Calls.getCommandUri("getShoppingList");
-    return Calls.call("get", commandUri);
-  },
-
   loadIdentityProfiles() {
     const commandUri = Calls.getCommandUri("sys/uuAppWorkspace/initUve");
     return Calls.call("get", commandUri);
@@ -43,6 +37,38 @@ const Calls = {
   async initAndGetWorkspace(dtoInData) {
     await Calls.initWorkspace(dtoInData);
     return await Calls.getWorkspace();
+  },
+
+  ShoppingList: {
+    list(dtoIn) {
+      const commandUri = Calls.getCommandUri("shoppingList/list");
+      return Calls.call("get", commandUri, dtoIn);
+    },
+  
+    create(dtoIn) {
+      const commandUri = Calls.getCommandUri("shoppingList/create");
+      return Calls.call("post", commandUri, dtoIn);
+    },
+  
+    update(dtoIn) {
+      const commandUri = Calls.getCommandUri("shoppingList/update");
+      return Calls.call("post", commandUri, dtoIn);
+    },
+  
+    delete(dtoIn) {
+      const commandUri = Calls.getCommandUri("shoppingList/delete");
+      return Calls.call("post", commandUri, dtoIn);
+    },
+  },
+
+  getShoppingList() {
+    const commandUri = Calls.getCommandUri("getShoppingList");
+    return Calls.call("get", commandUri);
+  },
+
+  getUserList() {
+    const commandUri = Calls.getCommandUri("getUserList");
+    return Calls.call("get", commandUri);
   },
 
   getCommandUri(useCase, baseUri = Environment.appBaseUri) {

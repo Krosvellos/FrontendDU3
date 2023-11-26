@@ -51,7 +51,9 @@ let Home = createVisualComponent({
       flexDirection: 'column',
       justifyContent: 'center',
       alignItems: 'center',
-      height: '20vh', // Center vertically on the viewport
+      height: '35vh',
+      color: "white",
+      fontSize: "18px" // Center vertically on the viewport
     };
     //@@viewOn:render
     const attrs = Utils.VisualComponent.getAttrs(props);
@@ -62,9 +64,9 @@ let Home = createVisualComponent({
         <div style={containerStyles}>
       <h1>Frontend - Domácí Úkol 4</h1>
       <div>
-        <b>Přeji krásný den! Snad budou mockup data fungovat!</b>
-        
-      </div>
+        <b>Přeji krásný den! Dovolil jsem si pro tento úkol poupravit Vaši bezva variantu a na ní dále stavět.</b>
+        </div>
+        <div><b><b>Seznamy naleznete v Shopping Lists, snad budou mock data fungovat!</b></b></div>
     </div>
       </div>
     );
